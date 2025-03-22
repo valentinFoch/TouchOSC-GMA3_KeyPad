@@ -1,0 +1,42 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Petit projet rapide bas\'e9 sur l'interface de Gaphux : https://gaphux.com/product/grandma3-onpc-command-section/\
+\
+Objectif : Contr\'f4ler le KeyPad de Grand MA avec son t\'e9l\'e9phone.\
+\
+Raison : \
+- Faciliter le focus (surtout quand on est seul) \
+- Faciliter la programmation sur Grand MA 3 On PC\
+\
+La solution de Gaphux fonctionnait bien mais passait par TouchOSC Bridge. \
+Dans notre cas, nous passons directement par OSC.\
+\
+Comment \'e7a fonctionne : \
+Il y a un script dans TouchOSC qui permet de compiler un message qui s'envoie \'e0 la console en OSC lorsque vous faites "Please".\
+\
+Mise en place : \
+- Achetez l'app TouchOSC sur votre mobile | https://hexler.net/touchosc\
+- T\'e9l\'e9chargez le fichier GM3_touchOSC-NumPad.tosc, puis importez-le dans votre app. \
+- Dans TouchOSC, mettez en place l'OSC : \
+  o Connexion 1 : UDP \
+  o Host : IP DE VOTRE GRAND MA 3 \
+  o Send port : PORT OSC DE VOTRE GRAND MA 3\
+  o Receive port : \
+- Dans Grand MA 3, allez dans le menu R\'e9glages > R\'e9seau, puis dans l'onglet Station Control, activez l'OSC Input.\
+- Toujours dans Grand MA 3, allez dans le menu : R\'e9glages > IN / OUT, puis dans le menu OSC. Configurez une OSC Data avec le port mis dans TouchOSC. \
+Attention, assurez-vous d'\'eatre sur la bonne interface r\'e9seau et d'activer les INPUT !\
+\
+Vous pouvez voir la commande en cours de r\'e9daction en haut de l'interface.\
+\
+Soyez indulgent, c'est un petit projet personnel pas compl\'e8tement abouti et comment\'e9. Il n'a pas \'e9t\'e9 r\'e9alis\'e9 pour \'eatre partag\'e9. \
+Je le mets ici car j'ai vu quelques personnes demander une petite app similaire.\
+\
+Au plaisir !\
+\
+Valentin\
+}
